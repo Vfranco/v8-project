@@ -1,1 +1,16 @@
-<p>result works!</p>
+<div class="box">
+  <div class="box-header border-bottom-1 d-flex justify-content-between">
+    <span class="box-header-title">What you find ?!</span>
+    <a [routerLink]="['/']" class="btn btn-default">Try Again</a>
+  </div>
+  <div class="box-body">
+    <app-snippet></app-snippet>
+    <app-snippet></app-snippet>
+    <app-snippet></app-snippet>
+  </div>
+  <div class="box-footer box-footer--centered border-top-1">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+  </div>
+</div>

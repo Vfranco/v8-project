@@ -1,0 +1,30 @@
+.snippet {
+  $_snippet-color-text: #3465ec;
+  $_snippet-color-description: #737373;
+  $_snippet-color-badge: #809ff3;
+
+  &-title {
+    font-size: 0.6rem;
+    color: $_snippet-color-text;
+  }
+
+  &-description {
+    color: $_snippet-color-description;
+    max-width: 600px;
+
+    p {
+      margin: 1rem 0;
+    }
+  }
+
+  &-tags {
+    font-size: 0.7rem;
+
+    &--badge {
+      padding: 5px;
+      background-color: $_snippet-color-badge;
+      border-radius: 10px;
+      color: #fff;
+    }
+  }
+}

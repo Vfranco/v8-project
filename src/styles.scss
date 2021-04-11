@@ -34,6 +34,11 @@ a {
       color: $gray;
     }
 
+    &-title {
+      color: #7e7e7e;
+      font-size: 1rem;
+    }
+
     &--center {
       display: flex;
       justify-content: center;
@@ -50,6 +55,15 @@ a {
     display: flex;
     padding: 1rem;
     justify-content: flex-end;
+
+    &--centered {
+      display: flex;
+      justify-content: center;
+
+      span {
+        letter-spacing: 8px;
+      }
+    }
   }
 }
 
@@ -91,4 +105,13 @@ a {
 
 .is-relative {
   position: relative;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+  align-items: center;
 }

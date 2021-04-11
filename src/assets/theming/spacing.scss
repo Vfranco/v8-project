@@ -46,3 +46,12 @@ $to: 30;
     }
   }
 }
+
+// border directions
+@each $abbr, $name in ("t": "top", "r": "right", "b": "bottom", "l": "left") {
+  @for $i from $from through $to {
+    .border-#{$name}-#{$i} {
+      border-#{$name}: 1px * $i solid #ccc;
+    }
+  }
+}
