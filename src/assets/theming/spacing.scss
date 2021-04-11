@@ -1,0 +1,48 @@
+$from: 1;
+$to: 30;
+
+// mixin
+@mixin margin($margin, $value) {
+  margin-#{$margin}: $value;
+}
+
+// margin
+@for $i from $from through $to {
+  .m-#{$i} {
+    margin: 1px * $i;
+  }
+}
+
+// margin directions px
+@each $abbr, $name in ("t": "top", "r": "right", "b": "bottom", "l": "left") {
+  @for $i from $from through $to {
+    .m#{$abbr}-#{$i} {
+      margin-#{$name}: 1px * $i;
+    }
+  }
+}
+
+// margin directions rem
+@each $abbr, $name in ("t": "top", "r": "right", "b": "bottom", "l": "left") {
+  @for $i from $from through $to {
+    .m#{$abbr}-rem-#{$i} {
+      margin-#{$name}: 1rem * $i;
+    }
+  }
+}
+
+// padding
+@for $i from $from through $to {
+  .p-#{$i} {
+    padding: 1px * $i;
+  }
+}
+
+// padding directions
+@each $abbr, $name in ("t": "top", "r": "right", "b": "bottom", "l": "left") {
+  @for $i from $from through $to {
+    .p#{$abbr}-#{$i} {
+      padding-#{$name}: 1px * $i;
+    }
+  }
+}

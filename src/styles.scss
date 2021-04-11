@@ -1,6 +1,87 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/app.scss";
 
 * {
   margin: 0;
   padding: 0;
+}
+
+html,
+body {
+  font-size: $fontSize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+// Box
+.box {
+  min-width: 800px;
+
+  &-header {
+    padding: 1rem;
+    h1, h2, h3 {
+      color: $gray;
+    }
+
+    &--center {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-footer {
+    display: flex;
+    padding: 1rem;
+    justify-content: flex-end;
+  }
+}
+
+.form {
+  width: 100%;
+
+  input.form-field {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+    padding: 0.8rem;
+    box-sizing: border-box;
+  }
+
+  &-field:focus {
+    border: 1px solid #7e7e7e;
+  }
+}
+
+.btn {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.8rem;
+  color: #7e7e7e;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    border: 1px solid #7e7e7e;
+  }
+
+  &-search {
+    background-color: rgb(219, 219, 219);
+    border: 1px solid #7e7e7e;
+    color: #7e7e7e;
+  }
+}
+
+.is-relative {
+  position: relative;
 }

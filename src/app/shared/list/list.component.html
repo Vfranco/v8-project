@@ -1,0 +1,13 @@
+<div class="filter">
+  <div class="filter-result">
+    <div *ngIf="isData then showData else emptyData"></div>
+    <ng-template #showData>
+      <a [routerLink]="['/result']" class="filter-coincidence p-3 mb-3" *ngFor="let item of data | async">
+        <span>{{item | highlighting : item : search : item}}</span>
+      </a>
+    </ng-template>
+    <ng-template #emptyData>
+      <span>No records</span>
+    </ng-template>
+  </div>
+</div>

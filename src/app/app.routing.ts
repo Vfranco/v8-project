@@ -1,8 +1,13 @@
-import { Routes } from "@angular/router";
-import { ResultComponent } from "./pages/result/result.component";
-import { SearchComponent } from "./pages/search/search.component";
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
 
-export const routeApp: Routes = [
-  { path: '', component: SearchComponent },
-  { path: 'result', component: ResultComponent }
+export const appRoute: Routes = [
+  { path: '', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) }
 ];
+
+@NgModule({
+  imports: [
+    RouterModule.forRoot(appRoute)
+  ]
+})
+export class AppRouting { }
