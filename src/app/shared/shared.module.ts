@@ -4,11 +4,13 @@ import { ListComponent } from './list/list.component';
 import { RouterModule } from '@angular/router';
 import { PipesModule } from '../core/pipes/pipes.module';
 import { SnippetComponent } from './snippet/snippet.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     ListComponent,
-    SnippetComponent
+    SnippetComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,8 @@ import { SnippetComponent } from './snippet/snippet.component';
   ],
   exports: [
     ListComponent,
-    SnippetComponent
+    SnippetComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { }

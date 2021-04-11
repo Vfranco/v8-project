@@ -1,0 +1,19 @@
+.footer {
+  background-color: #fff;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  letter-spacing: 8px;
+  width: 100%;
+
+  &-pagination {
+    position: absolute;
+    bottom: 0;
+  }
+
+  a {
+    color: #2c2ca5;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
