@@ -9,7 +9,7 @@ export class HighlightingPipe implements PipeTransform {
     const pattern = search
       .replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&")
       .split(' ')
-      .filter(word => word.length > 0)
+      .filter(t => t.length > 0)
       .join('|');
 
     const regex = new RegExp(pattern, 'gi');

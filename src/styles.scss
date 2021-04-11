@@ -12,6 +12,11 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #3465ec;
+}
+
 .main-container {
   display: flex;
   justify-content: center;
@@ -23,7 +28,9 @@ body {
 
   &-header {
     padding: 1rem;
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
       color: $gray;
     }
 
