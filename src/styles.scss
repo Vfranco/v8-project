@@ -76,7 +76,7 @@ a {
   width: 100%;
 
   input.form-field {
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 4px;
     width: 100%;
     outline: none;
@@ -119,4 +119,8 @@ a {
 .justify-content-between {
   justify-content: space-between;
   align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
 }

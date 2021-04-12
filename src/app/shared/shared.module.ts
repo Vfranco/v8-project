@@ -5,12 +5,14 @@ import { RouterModule } from '@angular/router';
 import { PipesModule } from '../core/pipes/pipes.module';
 import { SnippetComponent } from './snippet/snippet.component';
 import { FooterComponent } from './footer/footer.component';
+import { TopComponent } from './top/top.component';
 
 @NgModule({
   declarations: [
     ListComponent,
     SnippetComponent,
-    FooterComponent
+    FooterComponent,
+    TopComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
   exports: [
     ListComponent,
     SnippetComponent,
-    FooterComponent
+    FooterComponent,
+    TopComponent
   ]
 })
 export class SharedModule { }
