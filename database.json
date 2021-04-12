@@ -1,0 +1,144 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "tag": [
+        "Mazda",
+        "Chevrolet",
+        "Renault"
+      ],
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis necessitatibus tenetur velit veritatis, laboriosam commodi saepe blanditiis illo voluptatibus, autem aspernatur dolore animi id maxime repudiandae eum eveniet nemo ratione?",
+      "title": "Disfruta de las mejores marcas de carros.",
+      "link": "https://www.google.com/?hl=es"
+    }
+  ],
+  "homes": [
+    {
+      "id": 2,
+      "tag": [
+        "Apartamento",
+        "Finca",
+        "Unidad residencial"
+      ],
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis necessitatibus tenetur velit veritatis, laboriosam commodi saepe blanditiis illo voluptatibus, autem aspernatur dolore animi id maxime repudiandae eum eveniet nemo ratione?",
+      "title": "Disfruta de las mejores viviendas.",
+      "link": "https://www.google.com/?hl=es"
+    }
+  ],
+  "computers": [
+    {
+      "id": 3,
+      "tag": [
+        "Asus",
+        "Hp",
+        "Mac",
+        "Lenovo"
+      ],
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis necessitatibus tenetur velit veritatis, laboriosam commodi saepe blanditiis illo voluptatibus, autem aspernatur dolore animi id maxime repudiandae eum eveniet nemo ratione?",
+      "title": "Disfruta de las mejores computadores.",
+      "link": "https://www.google.com/?hl=es"
+    }
+  ],
+  "cellphones": [
+    {
+      "id": 4,
+      "tag": [
+        "Motorola",
+        "Samsung",
+        "Iphone",
+        "Vivo"
+      ],
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis necessitatibus tenetur velit veritatis, laboriosam commodi saepe blanditiis illo voluptatibus, autem aspernatur dolore animi id maxime repudiandae eum eveniet nemo ratione?",
+      "title": "Disfruta de las mejores celulares.",
+      "link": "https://www.google.com/?hl=es"
+    }
+  ],
+  "hotels": [
+    {
+      "id": 5,
+      "tag": [
+        "De cameron",
+        "El plaza",
+        "El panorama",
+        "La roma"
+      ],
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis necessitatibus tenetur velit veritatis, laboriosam commodi saepe blanditiis illo voluptatibus, autem aspernatur dolore animi id maxime repudiandae eum eveniet nemo ratione?",
+      "title": "Disfruta tu estadia en los mejores hoteles.",
+      "link": "https://www.google.com/?hl=es"
+    }
+  ],
+  "cities": [
+    {
+      "id": 6,
+      "tag": [
+        "Medellin",
+        "Sincelejo",
+        "Bogota",
+        "Cartagena"
+      ],
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis necessitatibus tenetur velit veritatis, laboriosam commodi saepe blanditiis illo voluptatibus, autem aspernatur dolore animi id maxime repudiandae eum eveniet nemo ratione?",
+      "title": "Disfruta tu estadia en los mejores ciudades.",
+      "link": "https://www.google.com/?hl=es"
+    }
+  ],
+  "airlines": [
+    {
+      "id": 7,
+      "tag": [
+        "Avianca",
+        "Airline",
+        "EasyFlight",
+        "Viva air"
+      ],
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis necessitatibus tenetur velit veritatis, laboriosam commodi saepe blanditiis illo voluptatibus, autem aspernatur dolore animi id maxime repudiandae eum eveniet nemo ratione?",
+      "title": "Tus mejores vuelos con las mejores aereolineas.",
+      "link": "https://www.google.com/?hl=es"
+    }
+  ],
+  "foods": [
+    {
+      "id": 8,
+      "tag": [
+        "Pizza",
+        "Hamburguesas",
+        "Desgranado",
+        "Picadas",
+        "Salchipapas"
+      ],
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis necessitatibus tenetur velit veritatis, laboriosam commodi saepe blanditiis illo voluptatibus, autem aspernatur dolore animi id maxime repudiandae eum eveniet nemo ratione?",
+      "title": "Las mejores comidas rapidos solo por aquí.",
+      "link": "https://www.google.com/?hl=es"
+    }
+  ],
+  "colors": [
+    {
+      "id": 9,
+      "tag": [
+        "Amarillo",
+        "Azul",
+        "Rojo",
+        "Morado",
+        "Blanco",
+        "Negro"
+      ],
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis necessitatibus tenetur velit veritatis, laboriosam commodi saepe blanditiis illo voluptatibus, autem aspernatur dolore animi id maxime repudiandae eum eveniet nemo ratione?",
+      "title": "Colores basicos.",
+      "link": "https://www.google.com/?hl=es"
+    }
+  ],
+  "books": [
+    {
+      "id": 10,
+      "tag": [
+        "clean code",
+        "El gran libro de angular",
+        "Poo",
+        "Javascript",
+        "C# a fondo."
+      ],
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis necessitatibus tenetur velit veritatis, laboriosam commodi saepe blanditiis illo voluptatibus, autem aspernatur dolore animi id maxime repudiandae eum eveniet nemo ratione?",
+      "title": "Colores basicos.",
+      "link": "https://www.google.com/?hl=es"
+    }
+  ]
+}

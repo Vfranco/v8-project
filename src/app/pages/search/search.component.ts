@@ -2,6 +2,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { filter, map, startWith } from 'rxjs/operators';
+import { SearchService } from 'src/app/core/services/search.service';
 
 @Component({
   selector: 'app-search',
@@ -26,15 +27,16 @@ export class SearchComponent implements OnInit {
     'Twelve',
     'Thirteen',
   ];
-  search$: Observable<string[]>
+  search$: Observable<string[]>;
   isTyping: boolean = true;
   isData: number = 0;
   toHighLight: string = '';
 
-  constructor() { }
+  constructor(private core: SearchService) { }
 
   ngOnInit(): void {
     this.initializeFormSearch();
+    this.core.getData().subscribe(data => console.log(data));
   }
 
   initializeFormSearch(): void {
