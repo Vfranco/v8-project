@@ -25,6 +25,10 @@ npm install
 ```bash
 ng -s -o
 ```
-
+##
+To run the fake server
+```bash
+npm run serve
+```
 #
 Enjoy the project
