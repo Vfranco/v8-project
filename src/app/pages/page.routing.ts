@@ -4,5 +4,5 @@ import { SearchComponent } from './search/search.component';
 
 export const pageRoute: Routes = [
   { path: '', component: SearchComponent },
-  { path: 'result', component: ResultComponent }
+  { path: 'result/:key', component: ResultComponent }
 ];

@@ -1,12 +1,13 @@
 <div class="snippet-title">
-  <h1>Mi Resultado</h1>
+  <h1>{{data.title}}</h1>
 </div>
 <div class="snippet-description">
   <p>
-    Mauris augue nisl, consectetur in tincidunt vel, maximus at lacus. Duis at ex aliquam, venenatis erat a, blandit
-    diam. Phasellus rutrum velit quis metus dapibus, ac venenatis lacus aliquet.
+    {{data.description}}
   </p>
 </div>
 <div class="snippet-tags">
-  <span class="snippet-tags--badge">Tag</span>
+  <ng-container *ngFor="let tag of data.tag">
+    <span class="snippet-tags--badge mr-4">{{tag}}</span>
+  </ng-container>
 </div>

@@ -4,13 +4,13 @@
     <a [routerLink]="['/']" class="btn btn-default">Try Again</a>
   </div>
   <div class="box-body box-body--fullHeight">
-    <app-snippet></app-snippet>
-    <app-snippet></app-snippet>
-    <app-snippet></app-snippet>
+    <ng-container *ngFor="let stuff of showResult">
+      <app-snippet [data]="stuff"></app-snippet>
+    </ng-container>
   </div>
 </div>
 <app-footer>
-  <a>1</a>
-  <a>2</a>
-  <a>3</a>
+  <ng-container *ngFor="let page of [].constructor(pages); let i = index">
+    <a (click)="next(i+1)">{{i+1}}</a>
+  </ng-container>
 </app-footer>

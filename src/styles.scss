@@ -49,6 +49,11 @@ a {
     padding: 1rem;
     display: flex;
     flex-direction: column;
+
+    &--fullHeight {
+      overflow: auto;
+      max-height: 80vh;
+    }
   }
 
   &-footer {

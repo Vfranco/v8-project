@@ -2,7 +2,7 @@
   <div class="filter-result">
     <div *ngIf="isData then showData else emptyData"></div>
     <ng-template #showData>
-      <a [routerLink]="['/result']" class="filter-coincidence p-3 mb-3" *ngFor="let item of data | async">
+      <a [routerLink]="['/result', item]" class="filter-coincidence p-3 mb-3" *ngFor="let item of data | async">
         <span [innerHTML]="item | highlighting : search : search"></span>
       </a>
     </ng-template>

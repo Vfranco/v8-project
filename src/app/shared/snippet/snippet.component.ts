@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Stuff } from 'src/app/core/interfaces/stuffs.interface';
 
 @Component({
   selector: 'app-snippet',
@@ -10,9 +11,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SnippetComponent implements OnInit {
 
+  @Input() data: Stuff;
+
   constructor() { }
 
   ngOnInit(): void {
-  }
 
+  }
 }

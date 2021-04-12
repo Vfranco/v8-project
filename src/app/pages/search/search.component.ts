@@ -1,7 +1,8 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
-import { Observable } from 'rxjs';
-import { filter, map, startWith } from 'rxjs/operators';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { Observable, Subscription } from 'rxjs';
+import { map, startWith } from 'rxjs/operators';
+import { Stuff } from 'src/app/core/interfaces/stuffs.interface';
 import { SearchService } from 'src/app/core/services/search.service';
 
 @Component({
@@ -9,34 +10,28 @@ import { SearchService } from 'src/app/core/services/search.service';
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss']
 })
-export class SearchComponent implements OnInit {
+export class SearchComponent implements OnInit, OnDestroy {
 
   inputSearch = new FormControl();
-  dataExample: string[] = [
-    'One',
-    'Two',
-    'Three',
-    'Four',
-    'Five',
-    'Six',
-    'Seven',
-    'Eight',
-    'Nine',
-    'Ten',
-    'Eleven',
-    'Twelve',
-    'Thirteen',
-  ];
+  keywords: string[] = [];
+  mockData: Array<Stuff> = [];
   search$: Observable<string[]>;
   isTyping: boolean = true;
   isData: number = 0;
   toHighLight: string = '';
+  subscription: Subscription = null;
 
   constructor(private core: SearchService) { }
 
   ngOnInit(): void {
     this.initializeFormSearch();
-    this.core.getData().subscribe(data => console.log(data));
+    this.getMockData();
+  }
+
+  getMockData(): void {
+    this.subscription = this.core.getData().subscribe(data => {
+      this.keywords = Object.keys(data);
+    });
   }
 
   initializeFormSearch(): void {
@@ -45,7 +40,11 @@ export class SearchComponent implements OnInit {
 
   filterValue(filterValue: string): string[] {
     this.toHighLight = filterValue;
-    this.isTyping = (filterValue.length > 0 || filterValue !== "") ? false : true;
-    return this.dataExample.filter(value => value.toLocaleLowerCase().includes(filterValue));
+    this.isTyping = (filterValue.length > 0) ? false : true;
+    return this.keywords.filter(value => value.toLocaleLowerCase().includes(filterValue));
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 }
